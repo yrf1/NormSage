@@ -1,0 +1,41 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <crowd-instructions link-text="View instructions" link-type="button">
+      
+    
+    <short-summary>
+      <p>The goal of this project is to understand which rules fits well with given conversational settings, based on your best judgements.</p>
+      
+      
+
+</p>
+    </short-summary>
+
+        
+
+  </crowd-instructions>
+  
+  <div>
+      Given the <b>conversation scenario</b> below, please take a moment to grasp the main idea of what is essentially going on:
+      <pre>${dial}</pre>
+      <p hidden> ${path}</p>
+      Now, consider the following social norm: 
+      <pre>${norm}</pre>
+      
+      Does the conversation scenario [ <i><font style="color:#00008B">entails</font> / <font style="color:#00008B">is irrelevant to</font> / <font style="color:#00008B">violates</font></i> ] the given social norm? 
+      <crowd-input name="entailment_verdict" placeholder="Type: 'entails', 'is irrelevant to', or 'violates' (please use one of these three terminologies, no other wording)" required></crowd-input>
+      <br>
+      Please provide a 1-2 sentence, detailed and insightful explanation for your answer above. 
+      <crowd-input name="explanation" placeholder="Type your detailed and insightful input here... (simply 'N/A' or 'This is irrelevant' would not provide sufficient context)" required></crowd-input>
+      Lastly, copy and paste the span of text from the input dialogue that best highlights why the conversation scenario <i>entails</i>, <i>is irrelevant to</i>, or <i>violates</i> the given social norm. 
+      <crowd-input name="highlight" placeholder="Paste the relevant span of text taken directly from the input dialogue here" required></crowd-input>
+      <!-- <crowd-input name="utterance" placeholder="The conversation scenario [entails / is irrelevant to / violates] because..." required></crowd-input>--> 
+  </div>
+</crowd-form>

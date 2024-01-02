@@ -1,0 +1,34 @@
+#conda env create -f configs/SocialChem.yml
+name: SocialChem101
+
+dependencies:
+  - python=3.7
+  - numpy
+  - matplotlib
+  - pip:
+    - mbforbes_python_utils
+    - black
+    - mypy
+    - mypy-extensions
+    - transformers == 2.11.0  # library changes rapidly, so we match exactly
+    - pandas >= 1.0.5         # need pd.NA feature for nullable integers
+    - praw
+    - tqdm
+    - spacy
+    - Jinja2
+    - markdown
+    - markdown-checklist
+    - seaborn
+    - boto3
+    - xmltodict
+    - yaspin
+    - ipython
+    - scikit-learn
+    - emoji
+    - nltk
+    - rouge
+    - pyarrow
+    - tensorboard
+    - tensorboardx
+    - bert-score
+    - flask

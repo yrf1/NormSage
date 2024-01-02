@@ -1,0 +1,14 @@
+Schema:
+Norms typically follow one of the following templates, and elaborate on the applicable conditions or why:
+It's [good/helpful/important/expected] to do action [Y], under situation [Z]
+It's [wrong/evil/not normal/unlawful] to do action [Y], for reason [Z]
+In context [C], if one wants to do task or goal [X], one should / not force [P] to do behavior [Y]
+
+Question:
+List some social norms related to the situation, in detail over separate lines:
+List some moral norms related to the situation, in detail over separate lines:
+List some cultural norms related to the situation, in detail over separate lines:
+What are some social norms related to the situation? List them in detail, over separate lines.
+What are some moral norms related to the situation? List them in detail, over separate lines.
+What some cultural norms related to the situation? List them in detail, over separate lines.
+What are some social norms that could be entailed or violated in this situation? List them in detail, over separate lines.
